@@ -1,13 +1,13 @@
 import UIKit
 import SPBase
 
-class TableCell: UITableViewCell {
-    @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var subtitleLabel: UILabel!
-    @IBOutlet var topButton: UIButton!
-    @IBOutlet var bottomButton: UIButton!
+public class TableCell: UITableViewCell {
+    @IBOutlet public var titleLabel: UILabel!
+    @IBOutlet public var subtitleLabel: UILabel!
+    @IBOutlet public var topButton: UIButton!
+    @IBOutlet public var bottomButton: UIButton!
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         let baseTheme = BaseTheme()
         titleLabel.textColor = baseTheme.textColor
