@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SPBase",
+        "repositoryURL": "https://github.com/geraldk/sp-base.git",
+        "state": {
+          "branch": "main",
+          "revision": "fad8508469c9e18701c66406fe2dbfa5c1ef5b8d",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

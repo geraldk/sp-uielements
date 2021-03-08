@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="73" id="ITP-kE-nfe" customClass="TableCell" customModule="SP-UI">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="73"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ITP-kE-nfe" id="ENo-Uo-AlA">
+                <rect key="frame" x="0.0" y="0.0" width="416" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRf-mz-G6A">
+                        <rect key="frame" x="20" y="8" width="43.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ff-AR-9Y9">
+                        <rect key="frame" x="24" y="32.5" width="37.5" height="32.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqm-wM-QeF">
+                        <rect key="frame" x="360" y="36.5" width="56" height="36.5"/>
+                        <state key="normal" title="Button" image="trash" catalog="system"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2e-Q6-lB8">
+                        <rect key="frame" x="360" y="0.0" width="56" height="36.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="1re-FE-jvP"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="scribble" catalog="system"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="K2e-Q6-lB8" secondAttribute="trailing" id="3lC-XW-1Vj"/>
+                    <constraint firstItem="iqm-wM-QeF" firstAttribute="top" secondItem="K2e-Q6-lB8" secondAttribute="bottom" id="5wM-uN-fMw"/>
+                    <constraint firstAttribute="bottom" secondItem="iqm-wM-QeF" secondAttribute="bottom" id="B8B-gv-OzN"/>
+                    <constraint firstItem="iqm-wM-QeF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1ff-AR-9Y9" secondAttribute="trailing" constant="16" id="DXE-sa-ZBe"/>
+                    <constraint firstItem="rRf-mz-G6A" firstAttribute="leading" secondItem="ENo-Uo-AlA" secondAttribute="leading" constant="20" symbolic="YES" id="HcX-qE-tDH"/>
+                    <constraint firstItem="1ff-AR-9Y9" firstAttribute="top" secondItem="rRf-mz-G6A" secondAttribute="bottom" constant="4" id="ODb-Hn-sXx"/>
+                    <constraint firstItem="1ff-AR-9Y9" firstAttribute="leading" secondItem="rRf-mz-G6A" secondAttribute="leading" constant="4" id="RpB-eN-55O"/>
+                    <constraint firstItem="iqm-wM-QeF" firstAttribute="leading" secondItem="K2e-Q6-lB8" secondAttribute="leading" id="S3u-ST-nqu"/>
+                    <constraint firstAttribute="bottom" secondItem="1ff-AR-9Y9" secondAttribute="bottom" constant="8" id="Wp0-EW-jbE"/>
+                    <constraint firstAttribute="trailing" secondItem="iqm-wM-QeF" secondAttribute="trailing" id="fjp-VF-w2e"/>
+                    <constraint firstItem="K2e-Q6-lB8" firstAttribute="height" secondItem="ENo-Uo-AlA" secondAttribute="height" multiplier="0.5" id="k1Z-HI-yNa"/>
+                    <constraint firstItem="K2e-Q6-lB8" firstAttribute="top" secondItem="ENo-Uo-AlA" secondAttribute="top" id="m7l-w9-eAU"/>
+                    <constraint firstItem="rRf-mz-G6A" firstAttribute="top" secondItem="ENo-Uo-AlA" secondAttribute="top" constant="8" id="ml5-yx-QMl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomButton" destination="iqm-wM-QeF" id="oIf-0s-f8G"/>
+                <outlet property="subtitleLabel" destination="1ff-AR-9Y9" id="R9m-WO-U9i"/>
+                <outlet property="titleLabel" destination="rRf-mz-G6A" id="LiX-JV-ckz"/>
+                <outlet property="topButton" destination="K2e-Q6-lB8" id="jdc-Me-lR1"/>
+            </connections>
+            <point key="canvasLocation" x="-8.6956521739130448" y="122.87946428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="scribble" catalog="system" width="128" height="118"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
+    </resources>
+</document>
